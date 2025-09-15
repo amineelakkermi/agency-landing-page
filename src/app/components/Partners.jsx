@@ -7,7 +7,7 @@ import styles from './Partners.module.css';
 export default function Partners() {
 
   const partners = Array.from({ length: 6 }, (_, i) => ({
-    src: `../public/brand${i + 1}.png`,
+    src: `../public/images/brand${i + 1}.png`,
     alt: `Partner ${i + 1}`,
   }));
 

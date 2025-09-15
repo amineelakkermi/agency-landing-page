@@ -2,6 +2,7 @@ import './styles/globals.css'
 import { Providers } from './components/providers'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollTop from './components/ScrollToTop';
 
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased transition-colors duration-300">
         <Providers>
           <Navbar />
+          <ScrollTop />
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>

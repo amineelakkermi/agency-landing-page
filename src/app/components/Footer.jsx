@@ -4,7 +4,7 @@ import styles from "../styles/style";
 const Footer = () => {
   return (
     <>
-      <footer className={`relative background2 z-10  pb-10 pt-20 lg:pb-20 lg:pt-[120px] ${styles.paddingX}`}>
+      <footer className={`relative background z-10  pb-10 pt-20 lg:pb-20 lg:pt-[120px] ${styles.paddingX}`}>
         <div className={`container mx-auto max-w-7xl ${styles.paddingX}`}>
           <div className="w-full flex justify-between flex-wrap">
             <div>
@@ -124,7 +124,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-base text-secondary">
-                  &copy; 2025
+                  &copy; {new Date().getFullYear()}
                 </p>
               </div>
             </div>

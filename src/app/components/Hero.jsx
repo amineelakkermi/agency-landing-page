@@ -1,4 +1,5 @@
 import styles from "../styles/style";
+import ButtonPart from "./ButtonPart";
 import Gradient from "./Gradient";
 import MainTitle from "./MainTitle";
 import Partners from "./Partners";
@@ -7,8 +8,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative z-20 w-full min-h-screen flex flex-col justify-center items-center text-center gap-16 p-4 background"
+      className="relative background z-20 w-full min-h-screen flex flex-col justify-center items-center text-center gap-16 p-4"
     >
+
       {/* Effets de dégradés */}
       <Gradient />
 
@@ -27,20 +29,8 @@ export default function Hero() {
         </p>
 
         {/* Boutons d’action */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a
-            href="#"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-10 rounded-full transition-colors duration-200"
-          >
-            Get Started
-          </a>
-          <a
-            href="#"
-            className="border border-blue-600 text-blue-600 font-medium py-3 px-10 rounded-full hover:bg-gray-100 transition-colors duration-200"
-          >
-            About Us
-          </a>
-        </div>
+        <ButtonPart />
+
       </div>
 
       {/* Logos des partenaires */}

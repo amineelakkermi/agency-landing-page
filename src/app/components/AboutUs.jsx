@@ -70,12 +70,7 @@ export default function AboutUs() {
                 matches your business.
               </p>
 
-              <a
-                href="#"
-                className="inline-flex mt-5 max-w-[200px] items-center justify-center px-7 py-3 text-base font-medium text-white rounded-md bg-blue-500 hover:bg-opacity-90 transition-colors"
-              >
-                Get Started
-              </a>
+        
             </div>
           </div>
         </div>

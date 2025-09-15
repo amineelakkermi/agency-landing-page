@@ -49,7 +49,7 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-primary cursor-pointer text-lg font-medium duration-200 hover:text-blue-600 dark:hover:text-blue-400"
+                className="text-primary cursor-pointer text-lg font-medium duration-200 hover:text-blue-500"
               >
                 {item.text}
               </button>
@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <button 
               onClick={() => setTheme(darkMode ? "light" : "dark")}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-full bg-gray-100  text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Changer le thème"
               >
               {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}

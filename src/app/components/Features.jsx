@@ -27,7 +27,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className={`relative py-20 flex flex-col justify-center items-center ${styles.padding}`}
+      className={`relative background py-20 flex flex-col justify-center items-center ${styles.padding}`}
     >
       <Gradient />
       <div className="relative max-w-7xl z-10 mx-auto px-6 flex flex-col gap-10 text-center">

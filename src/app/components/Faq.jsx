@@ -5,7 +5,7 @@ import TopPart from "./TopPart";
 
 const Accordion = () => {
   return (
-    <section className={`relative min-h-[100vh] z-20 overflow-hidden ${styles.padding}`}>
+    <section className={`relative background min-h-[100vh] z-10 overflow-hidden ${styles.padding}`}>
       <div className={`${styles.paddingX} container max-w-7xl mx-auto`}>
       
        <TopPart
@@ -44,7 +44,7 @@ const Accordion = () => {
             />
           </div>
         </div>
-        </div>
+      </div>
 
       <div className="absolute top-0 right-0 z-[-1]">
         <svg
