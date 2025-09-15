@@ -6,7 +6,7 @@ import styles from './Partners.module.css';
 export default function Partners() {
 
   const partners = Array.from({ length: 6 }, (_, i) => ({
-    src: `/images/brand${i + 1}.png`,
+    src: `/images/partner${i + 1}.png`,
     alt: `Partner ${i + 1}`,
   }));
 
@@ -24,7 +24,7 @@ export default function Partners() {
             className={`${styles.item} ${styles['item' + (index + 1)]}`}
           >
             <Image 
-              src={`/images/brand${index + 1}.png`} 
+              src={`/images/partner${index + 1}.png`} 
               alt={`Partner ${index + 1}`} 
               width={200} 
               height={200} 
