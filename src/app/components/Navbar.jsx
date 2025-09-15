@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from 'next-themes';
@@ -61,8 +60,8 @@ export default function Navbar() {
             <button 
               onClick={() => setTheme(darkMode ? "light" : "dark")}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label={darkMode ? 'Désactiver le mode sombre' : 'Activer le mode sombre'}
-            >
+              aria-label="Changer le thème"
+              >
               {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
             </button>
           </div>
@@ -83,8 +82,8 @@ export default function Navbar() {
               <button 
                 onClick={() => setTheme(darkMode ? "light" : "dark")}
                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                aria-label={darkMode ? 'Désactiver le mode sombre' : 'Activer le mode sombre'}
-              >
+                aria-label="Changer le thème"
+                >
                 {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
               </button>
               

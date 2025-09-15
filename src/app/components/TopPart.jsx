@@ -1,4 +1,4 @@
-import styles from "../style"
+import styles from "../styles/style";
 
 export default function TopPart({ subtitle , title , description }){
     return(

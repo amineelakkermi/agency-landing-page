@@ -1,4 +1,4 @@
-import styles from "../style";
+import styles from "../styles/style";
 
 export default function MainTitle({ title, span, restTitle }) {
   return (

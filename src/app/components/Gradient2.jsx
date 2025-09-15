@@ -1,5 +1,4 @@
 'use client';
-
 import { useTheme } from "next-themes";
 
 export default function Gradient2() {
@@ -12,7 +11,7 @@ export default function Gradient2() {
     
     return (
         <>
-      <div className="gradient_4" />
+        <div className="gradient_4" />
         </>
     );
 }

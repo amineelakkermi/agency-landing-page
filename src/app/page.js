@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import Pricing from "./components/Pricing";
 import Faq from "./components/Faq";
-import MagicBento from "./components/MagicBento";
 import Contact from "./components/Contact";
 
 export default function Home() {
@@ -12,20 +11,8 @@ export default function Home() {
     <div>
       <main>
        <Hero />
-    
        <AboutUs />
-       <MagicBento
-  textAutoHide={true}
-  enableStars={true}
-  enableSpotlight={true}
-  enableBorderGlow={true}
-  enableTilt={true}
-  enableMagnetism={true}
-  clickEffect={true}
-  spotlightRadius={300}
-  particleCount={12}
-  glowColor="132, 0, 255"
-/>
+       <Features />
        <Pricing />
        <Faq />
        <Contact />
