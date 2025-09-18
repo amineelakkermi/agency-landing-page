@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/style";
 import MainTitle from "./MainTitle";
 import Gradient2 from "./Gradient2";
+import MainParagraph from "./MainParagraph";
 
 const about1 = "/images/about1.jpg";
 const about2 = "/images/about2.jpg";
@@ -28,7 +29,7 @@ export default function AboutUs() {
                     <img
                       src={src}
                       alt={`About ${index + 1}`}
-                      className="w-full h-auto min-h-[350px] max-h-[600px] object-cover rounded-[25px]"
+                      className="w-full h-auto min-h-[250px] max-h-[500px] object-cover rounded-[25px]"
                     />
                   </div>
                 ))}
@@ -40,7 +41,7 @@ export default function AboutUs() {
                   <img
                     src={about3}
                     alt="About 3"
-                    className="w-full h-auto min-h-[450px] max-h-[700px] object-cover rounded-[25px]"
+                    className="w-full h-auto min-h-[350px] max-h-[600px] object-cover rounded-[25px]"
                   />
                   {/* Décoration en SVG */}
                   <span className="absolute -right-7 -bottom-7 z-[-1]">
@@ -54,21 +55,21 @@ export default function AboutUs() {
           {/* Colonne droite (texte) */}
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="mt-10 lg:mt-0 flex flex-col gap-5">
-              <span className="block text-lg font-semibold text-blue-500">
-                Why Choose Us
-              </span>
+              
 
-              <MainTitle title="Make your customers happy by giving services" />
-
-              <p className={styles.paragraph}>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <p className={styles.paragraph}>
-                A domain name is one of the first steps to establishing your
-                brand. Secure a consistent brand image with a domain name that
-                matches your business.
-              </p>
+              <MainTitle
+              title="Make your customers "
+              span="happy"
+              restTitle=" by giving services"
+              />
+              
+               <MainParagraph
+               text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+              />
+                <MainParagraph
+               text="A domain name is one of the first steps to establishing your brand. Secure a consistent brand image with a domain name that matches your business."
+              />
+            
 
         
             </div>

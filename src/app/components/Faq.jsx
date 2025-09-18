@@ -1,19 +1,26 @@
 'use client';
 import React, { useState } from "react";
 import styles from "../styles/style";
-import TopPart from "./TopPart";
+import MainTitle from "./MainTitle";
+import MainParagraph from "./MainParagraph";
 
 const Accordion = () => {
   return (
     <section className={`relative background min-h-[100vh] z-10 overflow-hidden ${styles.padding}`}>
       <div className={`${styles.paddingX} container max-w-7xl mx-auto`}>
       
-       <TopPart
-            subtitle="FAQ"
-            title="Any Questions? Look Here"
-            description="There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form."
-            />
+   
+        <div className="max-w-[700px] mx-auto text-center">
+        <MainTitle
+        title="Any Questions ? "
+        span="Look Here"
+        />
+        <MainParagraph
+        text="There are many variations of passages of Lorem Ipsum available
+        but the majority have suffered alteration in some form."
+        />
+        </div>
+      
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem

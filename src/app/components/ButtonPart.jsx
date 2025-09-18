@@ -1,6 +1,9 @@
 'use client';
 
 import { useTheme } from "next-themes";
+import { textVariant } from "../styles/motion";
+import styles from "../styles/style";
+import { motion } from 'framer-motion'
 
 
 export default function ButtonPart(){
@@ -9,7 +12,11 @@ export default function ButtonPart(){
 
 
     return(
-    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+    <motion.div
+    variants={textVariant(0.6)}
+    initial='hidden'
+    whileInView='show'
+    className="flex flex-col sm:flex-row justify-center items-center gap-4">
     <a href="#contact"
     className={`bg-blue-500 text-white hover:border-none  hover:bg-blue-600 font-medium py-3 px-10
     rounded-full transition-colors duration-600`}
@@ -22,6 +29,6 @@ export default function ButtonPart(){
     >
     About Us
     </a>
-    </div>
+    </motion.div>
     )
 }

@@ -1,8 +1,10 @@
 import styles from "../styles/style";
 import ButtonPart from "./ButtonPart";
 import Gradient from "./Gradient";
+import MainParagraph from "./MainParagraph";
 import MainTitle from "./MainTitle";
 import Partners from "./Partners";
+
 
 export default function Hero() {
   return (
@@ -22,12 +24,9 @@ export default function Hero() {
           restTitle=", Web Development, Digital Marketing."
         />
 
-        <p className={`${styles.paragraph} mb-8`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus,
-          consequat varius nisi quis, posuere magna.
-        </p>
-
+         <MainParagraph
+         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus, consequat varius nisi quis, posuere magna."
+         />
         {/* Boutons d’action */}
         <ButtonPart />
 

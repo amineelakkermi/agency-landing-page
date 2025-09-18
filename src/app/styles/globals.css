@@ -7,6 +7,8 @@
 :root {
   --background: #ffffff;
   --background2: #f9fafb;
+  --features-card-bg: #fff;
+  --features-card-icon: #4f46e5;
   --foreground: #171717;
   --text-primary: #171717;
   --text-secondary: #4b5563;
@@ -18,6 +20,8 @@
 .dark {
   --background: #0f133e;
   --background2: #070b38;
+  --features-card-bg: #1c2057;
+  --features-card-icon: #fff;
   --foreground: #ffffff;
   --text-primary: #ffffff;
   --text-secondary: #b0b2b7;
@@ -36,6 +40,13 @@
 
 .background3{
   background: var(--background3);
+}
+.features-card-bg{
+  background: var(--features-card-bg);
+}
+
+.features-card-icon{
+  color: var(--features-card-icon);
 }
 
 /* Force text colors */
@@ -111,11 +122,11 @@ body {
   left: 5%;
   top: 45%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .gradient_2 {
-  background: linear-gradient(136deg, #4e6bff 0%, #818cf8 100%);
+  background: linear-gradient(136deg, #ff714e 0%, #818cf8 100%);
   width: 250px;
   height: 200px;
   filter: blur(100px);
@@ -123,7 +134,7 @@ body {
   right: 5%;
   top: 55%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .gradient_3 {
