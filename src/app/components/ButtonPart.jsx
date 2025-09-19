@@ -6,16 +6,20 @@ import styles from "../styles/style";
 import { motion } from 'framer-motion'
 
 
+{/*
+variants={textVariant(0.6)}
+    initial='hidden'
+    whileInView='show'    
+*/}
+
 export default function ButtonPart(){
     const { theme, setTheme } = useTheme();
     const darkMode = theme === "dark";
 
 
     return(
-    <motion.div
-    variants={textVariant(0.6)}
-    initial='hidden'
-    whileInView='show'
+    <div
+    
     className="flex flex-col sm:flex-row justify-center items-center gap-4">
     <a href="#contact"
     className={`bg-blue-500 text-white hover:border-none  hover:bg-blue-600 font-medium py-3 px-10
@@ -29,6 +33,6 @@ export default function ButtonPart(){
     >
     About Us
     </a>
-    </motion.div>
+    </div>
     )
 }
