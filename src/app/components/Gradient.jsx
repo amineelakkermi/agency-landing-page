@@ -11,7 +11,7 @@ export default function Gradient() {
     
     return (
         <>
-            <div className="gradient_1" />
+            <div className="gradient_1 hidden md:flex" />
             <div className="gradient_2" />
         </>
     );
