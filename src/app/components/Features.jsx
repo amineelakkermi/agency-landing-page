@@ -50,20 +50,21 @@ export default function Features() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {features.map(({ icon: Icon, title, description }, index) => (
-            <div
-              key={index}
-              className="features-card-bg mt-5 group flex flex-col gap-5 items-center rounded-2xl shadow-sm p-8 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="flex justify-center items-center px-6 py-6 rounded-[25px] transition-colors duration-200 group-hover:bg-blue-500">
-                <Icon className="text-blue-600 group-hover:text-white text-4xl" />
-              </div>
-              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-primary">
-                {title}
-              </h3>
-              <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed text-secondary">
-                {description}
-              </p>
-            </div>
+         <div
+         key={index}
+         className="features-card-bg hover:bg-blue-500 transition-all duration-500 ease-in-out mt-5 group flex flex-col gap-5 items-center rounded-2xl shadow-sm p-8"
+       >
+         <div className="flex justify-center items-center px-6 py-6 rounded-[25px] transition-colors duration-500 ease-in-out">
+           <Icon className="text-blue-600 group-hover:text-white text-4xl" />
+         </div>
+         <h3 className="text-lg md:text-xl lg:text-2xl duration-500 ease-in-out font-semibold text-primary">
+           {title}
+         </h3>
+         <p className="text-gray-600 text-sm md:text-base lg:text-lg duration-500 ease-in-out leading-relaxed text-secondary">
+           {description}
+         </p>
+       </div>
+       
           ))}
         </div>
       </div>

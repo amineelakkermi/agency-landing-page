@@ -32,11 +32,6 @@ module.exports = {
         dark: "#041e3c",
         customText: "#777",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        adelle: ['"Adelle Sans Semibold"', "sans-serif"],
-        hisense: ['"Hisense Sans Bold"', "sans-serif"],
-      },
     },
     screens: {
       xs: "480px",

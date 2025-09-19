@@ -33,7 +33,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`fixed background w-full flex justify-center items-center h-[90px] z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""} `}>
+    <header className={`fixed background w-full flex justify-center items-center h-[90px] z-30 transition-all duration-300 ${isScrolled ? "shadow-md" : ""} `}>
       <div className="container max-w-7xl mx-auto px-4">
         
         {/* Desktop Navbar */}
@@ -103,7 +103,7 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="fixed inset-0 z-50">
+            <div className="fixed inset-0 z350">
               <div 
                 className="absolute inset-0 bg-white/80 dark:bg-[#041e3c]/80 backdrop-blur-sm" 
                 onClick={() => setIsOpen(false)}

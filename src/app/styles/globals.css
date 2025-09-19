@@ -5,9 +5,10 @@
 
 
 :root {
-  --background: #ffffff;
-  --background2: #f9fafb;
+  --background: #faf8f4;
+  --background2: #f9f8f7;
   --features-card-bg: #fff;
+  --features-card-hover: #006ea9;
   --features-card-icon: #4f46e5;
   --foreground: #171717;
   --text-primary: #171717;
@@ -21,6 +22,7 @@
   --background: #0f133e;
   --background2: #070b38;
   --features-card-bg: #1c2057;
+  --features-card-hover: #006ea9;
   --features-card-icon: #fff;
   --foreground: #ffffff;
   --text-primary: #ffffff;
@@ -43,6 +45,22 @@
 }
 .features-card-bg{
   background: var(--features-card-bg);
+  transition: all 0.6s ease-in-out;
+
+}
+.features-card-bg:hover{
+  background: var(--features-card-hover);
+  transform: translateY(-4px); /* يعطي إحساس بالحركة */
+}
+
+/* العنوان */
+.features-card-bg:hover h3 {
+  color: #fff;
+}
+
+/* الوصف */
+.features-card-bg:hover p {
+  color: #f1f5f9; /* رمادي فاتح */
 }
 
 .features-card-icon{
@@ -90,6 +108,9 @@ body {
   font-family: "Poppins";
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: "kufam";
+}
 
 .kufam{
   font-family: 'Kufam', sans-serif;
@@ -119,10 +140,10 @@ body {
   height: 200px;
   filter: blur(100px);
   position: absolute;
-  left: 5%;
-  top: 45%;
+  left: 10%;
+  top: 35%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .gradient_2 {
@@ -152,9 +173,9 @@ body {
   background: linear-gradient(136deg, #FF894F 0%, #f8bfa3 100%);
   width: 250px;
   height: 200px;
-  filter: blur(200px);
+  filter: blur(100px);
   position: absolute;
   right: 0%;
   top: 55%;
-  opacity: 1;
+  opacity: 0.7;
 }
