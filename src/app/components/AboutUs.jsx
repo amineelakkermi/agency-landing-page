@@ -4,9 +4,9 @@ import MainTitle from "./MainTitle";
 import Gradient2 from "./Gradient2";
 import MainParagraph from "./MainParagraph";
 
-const about1 = "/images/about1.jpg";
-const about2 = "/images/about2.jpg";
-const about3 = "/images/about3.jpg";
+const about1 = "/images/about1.png";
+const about2 = "/images/about2.png";
+const about3 = "/images/about3.png";
 
 export default function AboutUs() {
   return (
@@ -41,7 +41,7 @@ export default function AboutUs() {
                   <img
                     src={about3}
                     alt="About 3"
-                    className="w-full h-auto min-h-[350px] max-h-[600px] object-cover rounded-[25px]"
+                    className="w-full h-auto min-h-[400px] max-h-[500px] object-cover rounded-[25px]"
                   />
                   {/* Décoration en SVG */}
                   <span className="absolute -right-7 -bottom-7 z-[-1]">
